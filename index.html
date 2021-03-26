@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cờ Carro</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body bgcolor="black">
+<center><table id="board" cellspacing="0"></table></center>
+<!-- <p id= "test"></p> -->
+<script src="js.js"></script>
+<script>
+    let p1 = "X";
+    let p2 = "O";
+    let emply ='';
+    let turn = p1;
+    let board = new Carro(10,10);
+    // board.checkWin();
+    document.getElementById('board').innerHTML = board.creatBoard();
+</script>
+</body>
+</html>
